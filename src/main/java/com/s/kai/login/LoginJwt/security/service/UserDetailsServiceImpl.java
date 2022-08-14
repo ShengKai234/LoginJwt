@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+// If the authentication process is successful, we can get User’s information such as username, password, authorities from an Authentication object.
 // full custom User object using UserRepository
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

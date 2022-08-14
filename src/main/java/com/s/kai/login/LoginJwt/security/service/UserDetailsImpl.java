@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+// If the authentication process is successful, we can get User’s information such as username, password, authorities from an Authentication object.
 // full custom User object using UserRepository
 public class UserDetailsImpl implements UserDetails {
     private static final long serialVersionUID = 1L;
