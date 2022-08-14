@@ -35,6 +35,8 @@ dependencies {
 		exclude group: 'junit', module: 'junit'
 	}
 
+	implementation 'com.h2database:h2'
+
 	testImplementation "org.testcontainers:postgresql:1.17.3"
 	testImplementation 'org.testcontainers:junit-jupiter:1.17.3'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api' // JUnit 5 API 介面
