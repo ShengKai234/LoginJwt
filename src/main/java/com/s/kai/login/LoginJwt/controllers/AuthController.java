@@ -48,6 +48,8 @@ public class AuthController {
     // like doFilterInternal
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+        System.out.println("signin");
+
         // step2. use authenticationManager.authenticate(...) method to user authenticate
         //        while authentication throw exception
         //        while authentication success store user data, access in Authenticate DTO
@@ -76,6 +78,7 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest) {
+        System.out.println("signup");
         if (userRepository.existsByUsername(signupRequest.getUsername())) {
             return ResponseEntity
                     .badRequest()
